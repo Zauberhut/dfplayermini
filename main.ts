@@ -101,7 +101,7 @@ namespace dfplayermini {
         innerCall(myPlayType, 0x00, 0x00)
     }
 
-    //% blockId="dfplayermini_playFile" block="play DFPlayer Mini on the file number:%fileNumber|repeat:%setRepeat"
+    //% blockId="dfplayermini_playFile" block="play DFPlayer Mini on the file number:%fileNumber|repeat:%setRepeat" block.loc.de="Sound Nummer:%fileNumber|repeat:%setRepeat"
     //% weight=98 blockGap=20 fileNumber.min=1 fileNumber.max=255
     export function playFile(fileNumber: number, setRepeat: isRepeat): void {
         innerCall(0x03, 0x00, fileNumber)
